@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>로그인 페이지</title>
+    <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic&display=swap" rel="stylesheet">
+    <style>
+        /*'*'의 의미는 모든 것에 태그를 건다는 것*/
+        *{
+            font-family: 'Nanum Gothic', sans-serif;
+        }
+
+        .wrap {
+            width: 480px;
+            height: 800px;
+            border: solid gray 1px;
+        }
+        .mybackground{
+            background-image: url('05.jpg');
+            background-size: cover;
+            background-position: center;
+            width:480px;
+            height: 500px;
+            border-bottom: solid gray 1px;
+        }
+        .button{
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+        }
+        .button > div{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            margin: 150px 35px 0 35px;
+        }
+        .pf{
+            position: absolute;
+            top: 270px;
+
+        }
+        .pfp {
+            background-image: url('04.jpg');
+            background-size: cover;
+            background-position: center;
+            width: 180px;
+            height: 180px;
+            border-radius: 50%;
+            border: none;
+
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+
+    </style>
+</head>
+<body>
+<div class="wrap">
+<!--    프로필 배경화면-->
+    <div class="mybackground"></div>
+    <div class="button">
+        <div class="pf" >
+            <button class="pfp"></button>
+            <p></p>
+            <h style="font-size: 15px;">또치 친구 둘리</h>
+        </div>
+        <div>
+            <input type="image" src="01.png" width="60" height="60" alt="나와의채팅">
+            <p></p>
+            <h style="font-size: 11px;">나와의 채팅</h>
+        </div>
+        <div>
+            <input type="image" src="03.png" width="60" height="60" alt="프로필관리">
+            <p></p>
+            <h style="font-size: 11px;">프로필 편집</h>
+        </div>
+        <div>
+            <input type="image" src="02.png" width="60" height="60" alt="카카오스토리">
+            <p></p>
+            <h style="font-size: 11px;">카카오 스토리</h>
+        </div>
+
+
+    </div>
+
+
+</div>
+
+</body>
+</html>
